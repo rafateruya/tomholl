@@ -8,7 +8,8 @@
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest"
+    "test": "jest",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "next": "12.0.8",
@@ -31,6 +32,7 @@
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "babel-jest": "^27.4.6",
     "babel-loader": "^8.2.3",
+    "cypress": "^9.3.1",
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.8",
     "eslint-config-prettier": "^8.3.0",
