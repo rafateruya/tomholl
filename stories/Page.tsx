@@ -1,29 +1,12 @@
 import React from 'react'
 
-import { Header } from './Header'
 import './page.css'
 
-interface PageProps {
-  user?: {}
-  onLogin: () => void
-  onLogout: () => void
-  onCreateAccount: () => void
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface PageProps {}
 
-export const Page = ({
-  user,
-  onLogin,
-  onLogout,
-  onCreateAccount,
-}: PageProps) => (
+export const Page = ({}: PageProps) => (
   <article>
-    <Header
-      user={user}
-      onLogin={onLogin}
-      onLogout={onLogout}
-      onCreateAccount={onCreateAccount}
-    />
-
     <section>
       <h2>Pages in Storybook</h2>
       <p>
@@ -45,7 +28,7 @@ export const Page = ({
       <ul>
         <li>
           Use a higher-level connected component. Storybook helps you compose
-          such data from the "args" of child component stories
+          such data from the args of child component stories
         </li>
         <li>
           Assemble data in the page component from your services. You can mock
